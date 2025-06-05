@@ -1,7 +1,7 @@
 import { Podcast, AudioStream, Channel, SearchResponse, FeaturedResponse, NewestResponse, StreamResponse, ChannelResponse } from '@/types/podcast';
 
 // Direct API access - no server wrapper
-const EXTERNAL_API_URL = 'https://backendmix.vercel.app';
+const EXTERNAL_API_URL = 'https://backend-eight-wine-79.vercel.app';
 
 // Helper function to standardize fetch requests with timeouts and error handling
 async function fetchWithTimeout(url: string, options: RequestInit = {}, timeoutMs = 8000): Promise<Response> {
