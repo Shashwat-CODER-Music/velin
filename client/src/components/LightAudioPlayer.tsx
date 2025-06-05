@@ -176,19 +176,19 @@ const LightAudioPlayer = ({ podcast, audioStream, isPlaying, onTogglePlay, onSha
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-orange-500/10 via-white/5 to-orange-500/10 dark:from-orange-500/20 dark:via-white/10 dark:to-orange-500/20"></div>
           </div>
 
-          <div className="relative z-10 flex items-center p-3 px-4">
+          <div className="relative z-10 flex items-center p-2 px-3">
             {/* Thumbnail with simplified structure */}
             <button 
               onClick={toggleExpanded}
-              className="group w-12 h-12 flex-shrink-0 rounded-full overflow-hidden mr-3 shadow-md border border-gray-200/60 dark:border-zinc-700/40 relative focus:outline-none focus:ring-2 focus:ring-orange-400/40"
+              className="group w-10 h-10 flex-shrink-0 rounded-full overflow-hidden mr-3 shadow-md border border-gray-200/60 dark:border-zinc-700/40 relative focus:outline-none focus:ring-2 focus:ring-orange-400/40"
               aria-label="Expand player"
             >
               <img 
                 src={getYouTubeThumbnail(podcast.url, 'default')} 
                 alt=""
                 loading="eager"
-                width="48"
-                height="48"
+                width="40"
+                height="40"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
               {/* Single overlay for better performance */}
@@ -213,7 +213,7 @@ const LightAudioPlayer = ({ podcast, audioStream, isPlaying, onTogglePlay, onSha
                 e.stopPropagation(); // Prevent mini-player from expanding when clicking play button
                 onTogglePlay(!isPlaying);
               }}
-              className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 shadow-lg hover:shadow-orange-500/30 hover:scale-105 active:scale-95 transition-all duration-200"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 shadow-lg hover:shadow-orange-500/30 hover:scale-105 active:scale-95 transition-all duration-200"
               aria-label={isPlaying ? "Pause" : "Play"}
             >
               {isPlaying ? (
