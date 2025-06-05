@@ -630,9 +630,9 @@ const AudioPlayer = ({ podcast, audioStream, isPlaying, onTogglePlay, onShare }:
         aria-label="Mini Player"
       >
         {/* Compact interior with better layout */}
-        <div className="flex items-center p-3 relative">
+        <div className="flex items-center p-2 relative">
           {/* Thumbnail/Cover - now rectangular */}
-          <div className="w-16 h-12 rounded-md overflow-hidden mr-3 relative flex-shrink-0 shadow-sm border border-gray-200 dark:border-zinc-700">
+          <div className="w-12 h-9 rounded-md overflow-hidden mr-3 relative flex-shrink-0 shadow-sm border border-gray-200 dark:border-zinc-700">
             <img 
               src={getYouTubeThumbnail(podcast.url, 'default')}
               alt=""
